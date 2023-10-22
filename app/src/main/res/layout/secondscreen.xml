@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- Encabezado con botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="@dimen/extended_size"
+            android:layout_height="@dimen/extended_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/backbutton"
+            android:backgroundTint="@color/black"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/normal_size"
+            android:layout_marginTop="@dimen/normal_size"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/delbutton"
+            android:layout_width="@dimen/extended_size"
+            android:layout_height="@dimen/extended_size"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/delbutton"
+            android:backgroundTint="@color/black"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="@dimen/normal_size"
+            android:layout_marginTop="@dimen/normal_size"
+            />
+
+    </LinearLayout>
+
+    <!-- Título -->
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Añade un Título"
+        />
+
+    <!-- Cuerpo -->
+    <EditText
+        android:id="@+id/noteBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="24dp"
+        android:hint="Escribe aquí la descripción"
+        />
+</LinearLayout>
