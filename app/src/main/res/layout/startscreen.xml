@@ -27,12 +27,6 @@
             android:ellipsize="end"
             android:textSize="16sp"
             />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        >
 
         <Space
             android:layout_width="wrap_content"
